@@ -1,17 +1,18 @@
 package briotRuffini;
 
+import java.util.Scanner;
 public class briotRuffiniCompleto {
 	
 	public static void main (String[] args) {
 		
+	Scanner in = new Scanner(System.in);
+		//	Para calcular colocar os valores nas seguintes vari√°veis:
 		
-		//	Para calcular colocar os valores nas seguintes vari·veis:
-		
-			int x00    =    1;
-			int x01    =   -6;
-			int x02    =    3;
-			int x03    =   10;
-			int raiz   =    2;
+			int x00    =    in.nextInt();
+			int x01    =    in.nextInt();
+			int x02    =    in.nextInt();
+			int x03    =    in.nextInt();
+			int raiz   =    in.nextInt();
 	  
 	   //	
 			int resto1     =   x00;
@@ -21,27 +22,27 @@ public class briotRuffiniCompleto {
 	       
 	        if (x00 + x01 +x02 + x03 == 0) {
 	        	
-	        System.out.println("1 È uma das raÌzes do polinÙmio,");
+	        System.out.println("1 √© uma das ra√≠zes do polin√¥mio,");
 	        
 	        }	
 	        
 	        if (x00 + (-x01) + x02 + (-x03) == 0) {
 	        		
-	        		System.out.println("-1 È uma das raÌzes do polinÙmio,");
+	        		System.out.println("-1 √© uma das ra√≠zes do polin√¥mio,");
 	        	}
 	        
 	        
 	        else {
 	        	
-	        	System.out.println("1 e -1 n„o s„o raÌzes do polinÙmio,");
+	        	System.out.println("1 e -1 n√£o s√£o ra√≠zes do polin√¥mio,");
 	        }
 	        
 	        	        
 	    //    
 	        if (restoFinal == 0) {
 	        		
-	        System.out.println(raiz + " È raiz do polinÙmio,");
-	        System.out.println("o polinÙmio de grau rebaixado È " + resto1 + "x≤ " + resto2 + "x " + resto3);
+	        System.out.println(raiz + " √© raiz do polin√¥mio,");
+	        System.out.println("o polin√¥mio de grau rebaixado √© " + resto1 + "x¬≤ " + resto2 + "x " + resto3);
 	        
 	        int a =  resto1;
 			int b =  resto2;
@@ -57,20 +58,20 @@ public class briotRuffiniCompleto {
 			
 			if (deltaRaiz == 0) {
 				
-				System.out.println("a equaÁ„o n„o pode ser resolvida.");
+				System.out.println("a equa√ß√£o n√£o pode ser resolvida.");
 				
 					}
 			else {
 				
-				System.out.println("as raÌzes da equaÁ„o s„o " + x1 + " e " + x2);
-				System.out.println("as trÍs raÌzes do polinÙmio s„o " + raiz + ", " + x2 + " e " + x1 + ".");
+				System.out.println("as ra√≠zes da equa√ß√£o s√£o " + x1 + " e " + x2);
+				System.out.println("as tr√™s ra√≠zes do polin√¥mio s√£o " + raiz + ", " + x2 + " e " + x1 + ".");
 				}
 	        
 	        }
 	       
 	        else {
 	        	
-	        	System.out.println(raiz + " n„o È raiz do polinÙmio.");
+	        	System.out.println(raiz + " n√£o √© raiz do polin√¥mio.");
 	        }        
 	       	       	    
 
