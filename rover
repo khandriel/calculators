@@ -1,0 +1,71 @@
+package rover;
+import java.util.Scanner;
+
+public class RoverClass { // Osmar Nether Filho Matrícula: 20103647
+	
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in); //Declaração dos valores das váriaveis utilizadas.
+		
+		System.out.println("Insira a coordenada inicial do eixo x: ");
+		int coordenadaX = in.nextInt();
+		System.out.println("Insira a coordenada inicial do eixo y: ");
+		int coordenadaY = in.nextInt();
+		
+		System.out.println("Digite os comandos desejados: ");
+		String comandoRover = in.next();
+		String comandoRoverLow = comandoRover.toLowerCase(); //Conversão do comando para letra minúscula
+				
+		for(int n = 0; n < comandoRoverLow.length(); n++) { //Processamente dos comandos
+			
+		if(comandoRoverLow.charAt(n) == 'n'){				//Identificação dos comandos
+			
+			coordenadaY += 1;
+			System.out.println("Movendo o Rover para a direção norte.");
+		
+		}
+		
+		if(comandoRoverLow.charAt(n) == 's'){
+			
+			coordenadaY -= 1;
+			System.out.println("Movendo o Rover para a direção sul.");
+		
+		}
+		
+		if(comandoRoverLow.charAt(n) == 'l'){
+			
+			coordenadaX += 1;
+			System.out.println("Movendo o Rover para a direção leste.");
+		
+		}
+		
+		if(comandoRoverLow.charAt(n) == 'o'){
+			
+			coordenadaX -= 1;
+			System.out.println("Movendo o Rover para a direção oeste.");
+		
+		}
+		
+		if(comandoRoverLow.charAt(n) != 'n') { //Identificação dos caractéres que não são comandos
+			
+			if(comandoRoverLow.charAt(n) != 's') {
+				
+				if(comandoRoverLow.charAt(n) != 'l') {
+					
+					if(comandoRoverLow.charAt(n) != 'o') {
+						
+						System.out.println("Direção inválida: " 
+						+ comandoRoverLow.charAt(n));
+					 }
+				}
+			}
+		}
+		
+		
+		}
+		
+		System.out.println("A posição final do Rover é: (" + coordenadaX + "," //Exibição do Resultado Final
+		+ coordenadaY + ").");
+		
+			}
+		}
