@@ -1,7 +1,7 @@
 package rover;
 import java.util.Scanner;
 
-public class RoverClass { // Osmar Nether Filho Matrícula: 20103647
+public class RoverClass {
 	
 	public static void main(String[] args) {
 		
